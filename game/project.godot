@@ -95,6 +95,10 @@ VolumeSettingsMgr="*res://utils/volume_settings_mgr.gd"
 
 gdscript/warnings/unused_class_variable=true
 
+[display]
+
+window/handheld/orientation="sensor_landscape"
+
 [global]
 
 monitor=false

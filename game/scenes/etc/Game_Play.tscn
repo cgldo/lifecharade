@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Game_Play.gd" type="Script" id=1]
 [ext_resource path="res://scenes/etc/scene_background.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/themes/title_labels.tres" type="Theme" id=3]
 [ext_resource path="res://assets/fonts/NotoSansKR-Bold.otf" type="DynamicFontData" id=4]
-[ext_resource path="res://scenes/etc/GameLogic.gd" type="Script" id=5]
+[ext_resource path="res://scenes/etc/GameText.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 150
@@ -28,26 +27,11 @@ size_flags_vertical = 4
 custom_constants/margin_top = 40
 custom_constants/margin_left = 40
 
-[node name="GameLogic" type="Control" parent="Background/TitleMarginContainer"]
+[node name="Label" type="Label" parent="Background/TitleMarginContainer"]
 margin_left = 40.0
-margin_top = 40.0
+margin_top = 211.0
 margin_right = 1024.0
-margin_bottom = 600.0
-script = ExtResource( 5 )
-second = 5
-
-[node name="GameText" type="Label" parent="Background/TitleMarginContainer/GameLogic"]
-margin_top = 171.0
-margin_right = 984.0
-margin_bottom = 389.0
-theme = ExtResource( 3 )
+margin_bottom = 429.0
 custom_fonts/font = SubResource( 1 )
-text = "Start"
 align = 1
-autowrap = true
-
-[node name="Timer" type="Timer" parent="Background/TitleMarginContainer/GameLogic"]
-one_shot = true
-autostart = true
-
-[connection signal="timeout" from="Background/TitleMarginContainer/GameLogic/Timer" to="Background/TitleMarginContainer/GameLogic" method="_on_Timer_timeout"]
+script = ExtResource( 5 )

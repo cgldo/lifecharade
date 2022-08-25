@@ -1,13 +1,12 @@
 extends Control
 
-onready var _exit_btn:Button = $ButtonsMarginContainer/VBoxContainer/ExitBtn
-onready var _title_lbl: Label = $TitleMarginContainer/TitleLbl
 
 func _ready():
-	_title_lbl.text = ProjectSettings.get_setting("application/config/name")
-	if OS.get_name() == "HTML5":
-		_exit_btn.visible = false
+	randomize()
+	for _i in $Categories.get_children ():
+		_i.rect_min_size  = Vector2(get_viewport().size.x / 5,  get_viewport().size.y / 2)
+		
 
 
-func _on_ExitBtn_pressed():
-	get_tree().quit()
+
+	
