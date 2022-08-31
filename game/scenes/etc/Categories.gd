@@ -31,8 +31,10 @@ func _on_button_pressed(which : Button):
 			
 		if !_can_transition():
 			return
-		
-		TransitionMgr.transition_to(scene_to_load, transition_speed_seconds, fade_sound)
+		#$global.orient = OS.get_screen_orientation()
+		Global.current_category = current
+		get_tree().change_scene(scene_to_load)
+		#TransitionMgr.transition_to(scene_to_load, transition_speed_seconds, fade_sound)
 	else:
 		current = which.name
 		print(current)

@@ -90,6 +90,7 @@ TransitionMgr="*res://utils/transition_mgr.tscn"
 ScreenshotMgr="*res://utils/screenshot_mgr.tscn"
 InputMapMgr="*res://utils/input_map/input_map_mgr.gd"
 VolumeSettingsMgr="*res://utils/volume_settings_mgr.gd"
+Global="*res://scenes/etc/global.gd"
 
 [debug]
 
@@ -97,6 +98,8 @@ gdscript/warnings/unused_class_variable=true
 
 [display]
 
+window/size/width=1280
+window/size/height=720
 window/handheld/orientation="sensor_landscape"
 
 [global]

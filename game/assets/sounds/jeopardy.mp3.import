@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jeopardy.mp3-467951960bef2d304aaf8a626db97a8b.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/jeopardy.mp3"
+dest_files=[ "res://.import/jeopardy.mp3-467951960bef2d304aaf8a626db97a8b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

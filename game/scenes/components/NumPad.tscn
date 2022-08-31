@@ -1,0 +1,188 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://button_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/fonts/NotoSansKR-Regular.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/components/NumPad.gd" type="Script" id=3]
+[ext_resource path="res://scenes/components/NumPad.tres" type="StyleBox" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.611765, 0.705882, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+
+[node name="GridContainer" type="GridContainer"]
+margin_top = 101.0
+margin_right = 612.0
+margin_bottom = 518.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 3
+script = ExtResource( 3 )
+
+[node name="Button" type="Button" parent="."]
+margin_right = 204.0
+margin_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "7"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 204.0
+margin_right = 408.0
+margin_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "8"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 408.0
+margin_right = 612.0
+margin_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "9"
+
+[node name="Button4" type="Button" parent="."]
+margin_top = 105.0
+margin_right = 204.0
+margin_bottom = 209.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "4"
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 204.0
+margin_top = 105.0
+margin_right = 408.0
+margin_bottom = 209.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "5"
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 408.0
+margin_top = 105.0
+margin_right = 612.0
+margin_bottom = 209.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "6"
+
+[node name="Button7" type="Button" parent="."]
+margin_top = 209.0
+margin_right = 204.0
+margin_bottom = 313.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "1"
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 204.0
+margin_top = 209.0
+margin_right = 408.0
+margin_bottom = 313.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "2"
+
+[node name="Button9" type="Button" parent="."]
+margin_left = 408.0
+margin_top = 209.0
+margin_right = 612.0
+margin_bottom = 313.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "3"
+
+[node name="Button10" type="Button" parent="."]
+margin_top = 313.0
+margin_right = 204.0
+margin_bottom = 417.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "0"
+
+[node name="Button11" type="Button" parent="."]
+margin_left = 204.0
+margin_top = 313.0
+margin_right = 408.0
+margin_bottom = 417.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "Del"
+
+[node name="Button12" type="Button" parent="."]
+margin_left = 408.0
+margin_top = 313.0
+margin_right = 612.0
+margin_bottom = 417.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+text = "En"
