@@ -21,7 +21,7 @@ If you have an android device, you can connect your phone to pc and move the apk
 Then click on the apk to install the game
 
 ### Image and sounds
-Pixabay.com
+https://Pixabay.com
 
 ### Fonts
 The following font is used throughout the project.
