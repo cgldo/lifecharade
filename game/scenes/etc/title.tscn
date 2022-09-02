@@ -144,25 +144,6 @@ margin_right = 0.0
 margin_bottom = 0.0
 text = "Instruments"
 
-[node name="cousins" parent="Control" instance=ExtResource( 4 )]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 207.0
-margin_bottom = 607.0
-rect_min_size = Vector2( 200, 600 )
-custom_styles/focus = SubResource( 3 )
-text = ""
-align = 1
-icon_align = 1
-expand_icon = true
-
-[node name="Label" parent="Control/cousins" instance=ExtResource( 11 )]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_right = 0.0
-margin_bottom = 0.0
-text = "Cousins"
-
 [node name="superheroes" parent="Control" instance=ExtResource( 4 )]
 margin_left = 7.0
 margin_top = 7.0
